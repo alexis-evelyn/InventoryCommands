@@ -1,0 +1,6 @@
+name: Inventorycommands
+version: ${project.version}
+main: inventorycommands.inventorycommands.Inventorycommands
+depend: [protocolize]
+description: Command GUI for Bungeecord
+author: Alexis Evelyn
