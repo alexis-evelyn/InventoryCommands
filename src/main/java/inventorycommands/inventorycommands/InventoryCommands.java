@@ -1,10 +1,11 @@
 package inventorycommands.inventorycommands;
 
 import inventorycommands.inventorycommands.commands.*;
+import inventorycommands.inventorycommands.inventories.ChestFour;
 import net.md_5.bungee.api.plugin.Plugin;
 
 public final class InventoryCommands extends Plugin {
-    public PlayerInventoryExample inventoryExample;
+    public ChestFour inventoryExample;
 
     @Override
     public void onEnable() {
@@ -12,7 +13,7 @@ public final class InventoryCommands extends Plugin {
 
         getProxy().getPluginManager().registerCommand(this, new Test(this));
 
-        inventoryExample = new PlayerInventoryExample(this);
+        inventoryExample = new ChestFour(this);
     }
 
     @Override
